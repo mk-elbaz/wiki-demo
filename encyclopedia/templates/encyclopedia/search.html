@@ -1,0 +1,17 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Search Results
+{% endblock %}
+
+{% block body %}
+    <h3>Search Results for {{ result }}: </h3>
+    <ul class="list-group list-group-flush">
+        {% for entry in searchRes %}
+            <a href = "/wiki/{{ entry }}" ><li class="list-group-item list-group-item-action" >{{ entry }}</li></a>
+        {% empty %}
+            No results found.
+        {% endfor %}
+    </ul>
+
+{% endblock %}

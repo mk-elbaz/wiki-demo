@@ -1,0 +1,14 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    No entry
+{% endblock %}
+
+
+{% block body %}
+    <h1>Can't find this entry</h1>
+
+    Would you like to create it? <a href="{% url 'newEntry' %}">Create New Page</a>
+                    
+
+{% endblock %}
