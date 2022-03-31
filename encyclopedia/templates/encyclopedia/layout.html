@@ -8,6 +8,7 @@
         {% block title %}
         {% endblock %}
     </title>
+    <meta name="viewport" content="width=device-width" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -18,7 +19,7 @@
   </head>
   <body>
     <div class="row">
-      <div class="sidebar col-lg-2 col-md-3">
+      <div class="sidebar col-lg-2 col-md-3" style="margin-top: 3%;">
         <h1 style="text-align: left; margin-top: -25px">Wiki</h1>
         <form action="{% url 'search' %}" method="GET">
           <input
